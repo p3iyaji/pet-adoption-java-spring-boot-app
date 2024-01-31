@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ApplicationController {
-    @RequestMapping("/")
+    @RequestMapping("/adopter")
     public String startApplication(){
         return "welcome";
     }
