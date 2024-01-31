@@ -13,7 +13,7 @@ pipeline {
       stage("Compilation") {
           steps{
           	script{
-          		sh 'mvn package'
+          		sh 'mvn clean package'
           	}
             
           }
@@ -33,7 +33,7 @@ pipeline {
       stage("create container"){
           steps{
               script{
-                sh 'docker run -d -p 8181:8181 --name petadoptionapp petadoption:latest'
+                sh 'docker run -d -p 8181:8080 --name petadoptionapp petadoption:latest'
               }
             
           }
