@@ -33,7 +33,7 @@ pipeline {
       stage("create container"){
           steps{
               script{
-                sh 'docker run -d -p 80:80 --name petadoptionapp petadoption:latest'
+                sh 'docker run -d -p 8081:8080 --name petadoptionapp petadoption:latest'
               }
             
           }
