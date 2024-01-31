@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.simplilearn.petadoption.Models.PetAnimal;
 import com.simplilearn.petadoption.Models.PetOwner;
 import com.simplilearn.petadoption.services.ApplicationService;
@@ -23,8 +25,8 @@ import com.simplilearn.petadoption.services.PetService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-//@RestController
-@Controller
+@RestController
+//@Controller
 @RequestMapping("/owner")
 public class OwnerController {
     @Autowired
