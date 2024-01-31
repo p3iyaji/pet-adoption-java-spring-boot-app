@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.infostack</groupId>
+	<groupId>com.simplilearn.petadoption</groupId>
 	<artifactId>petadoption</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>petadoption</name>
